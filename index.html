@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Ruby Brobey is a Front-End Developer, Email Developer, and Web Specialist creating responsive HTML emails and modern websites with clean, accessible code."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <title>Ruby Brobey | Front-End & Email Developer Portfolio</title>
+
+    <style>
+      :root {
+        /*Global variables*/
+        --text-color: #000000;
+        --link-color: #955581;
+        --background-color: #ffffff;
+        --skills-background: #f3f6f9;
+      }
+      /*Reset default styling by targeting all elements*/
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /*Scroll behaviour from link to link*/
+      html {
+        scroll-behavior: smooth;
+      }
+      /*Default font and fall back font*/
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: var(--background-color);
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      a {
+        color: var(--link-color);
+        text-decoration: none;
+      }
+
+      /*NAVBAR*/
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--skills-background);
+
+        padding: 0 50px;
+        height: 80px;
+      }
+
+      nav .left a {
+        color: var(--link-color);
+        font-size: 22px;
+        font-weight: 600; /*Respective google fonts import 600 or 400*/
+      }
+
+      nav .right a {
+        color: var(--text-color);
+        margin: 0 10px;
+      }
+
+      /*Target last link in right div*/
+      nav .right a:last-child {
+        color: var(--background-color);
+        background-color: var(--text-color);
+        padding: 5px 15px;
+        border-radius: 5px;
+      }
+
+      nav .right a:last-child:hover {
+        transform: scale(1.05);
+        transition: all 0.3s ease;
+        background-color: var(--link-color);
+        color: var(--background-color);
+      }
+
+      nav .right a span {
+        margin-left: 5px;
+      }
+
+      /*HERO*/
+      .hero-section {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+        margin: 50px 0;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 100px;
+      }
+
+      .hero-section .text {
+        flex: 1;
+      }
+
+      .hero-section .text p {
+        color: var(--link-color);
+      }
+
+      .hero-section .headshot {
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .hero-section .text h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+      }
+
+      .hero-section .text h1 span {
+        font-size: 45px;
+
+        font-size: 1.4em;
+        color: var(--link-color); /* or any color you want */
+        margin-right: 10px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+      }
+
+      .hero-section .links {
+        margin-top: 25px;
+      }
+
+      .hero-section .text .links a {
+        display: inline-block;
+        padding: 5px 10px;
+        border: 2px solid var(--link-color);
+        border-radius: 999px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        transition: 0.5s;
+      }
+
+      .hero-section .text .links a:hover {
+        color: var(--text-color);
+        border: 2px solid var(--text-color);
+      }
+
+      .hero-section .headshot img {
+        border-radius: 50%;
+        width: 350px;
+      }
+
+      /*SECTION 2 : SKILLS*/
+      .skills-section {
+        padding: 50px 50px;
+        margin-bottom: 100px;
+        background-color: var(--link-color);
+        color: var(--background-color);
+      }
+
+      .skills-section h2 {
+        font-size: 35px;
+        text-align: center;
+      }
+
+      .skills-section .text {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .skills-section .cells {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .skills-section .cells .cell {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 20px;
+
+        margin: 10px;
+        gap: 10px;
+      }
+
+      .skills-section .cells .cell img {
+        width: 50px;
+        height: auto;
+      }
+
+      .skills-section .cells .cell span {
+        font-size: 18px;
+      }
+
+      /* SECTION 3: PORTFOLIO*/
+      .portfolio-section {
+        padding: 0 50px;
+        margin-bottom: 100px;
+      }
+
+      .portfolio-section h2 {
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
+
+      .portfolio-section .portfolio-grid {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+      }
+
+      .portfolio-section .portfolio-grid .project-item {
+        text-align: center;
+        flex: 1;
+      }
+
+      .portfolio-section .portfolio-grid .project-item img {
+        border-radius: 5px;
+        margin-bottom: 10px;
+        width: 100%;
+        max-width: 300px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* soft shadow */
+      }
+
+      .portfolio-section .project-item img:hover {
+        transform: scale(1.05);
+        transition: transform 0.1s ease;
+      }
+
+      .portfolio-section .portfolio-grid .project-item p {
+        font-weight: 600;
+      }
+
+      .portfolio-section .portfolio-grid .project-item p:last-child {
+        font-weight: normal;
+      }
+
+      .portfolio-section p {
+        margin-bottom: 20px;
+      }
+
+      /*FOOTER SECTION*/
+      .site-footer {
+        background-color: var(--text-color);
+        color: var(--text-color);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 16px;
+        background-color: var(--skills-background);
+      }
+
+      @media (max-width: 850px) {
+        /*SECTION 1: HERO*/
+        .hero-section .text h2 {
+          font-size: 32px;
+        }
+      }
+
+      @media (max-width: 740px) {
+        /*SECTION 1: HERO*/
+        .hero-section {
+          flex-direction: column-reverse;
+        }
+
+        .hero-section .headshot img {
+          width: 300px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        /*NAVBAR*/
+        nav {
+          padding: 0 20px;
+        }
+
+        nav .right a span {
+          display: none;
+        }
+
+        nav .right a {
+          font-size: 22px;
+        }
+
+        nav .right a:last-child {
+          color: var(--text-color);
+          background-color: transparent;
+          padding: 0;
+        }
+
+        /* SECTION 1: HERO*/
+        .hero-section {
+          padding: 0 20px;
+        }
+
+        .hero-section .text h1 {
+          font-size: 30px;
+        }
+
+        /*SECTION 2 : SKILLS*/
+        .skills-section {
+          padding: 30px 30px;
+        }
+
+        .skills-section .cells .cell span {
+          font-size: 16px;
+        }
+
+        /*SECTION 3: PORTFOLIO*/
+        .portfolio-section {
+          text-align: center;
+        }
+
+        .portfolio-section .portfolio-grid {
+          flex-direction: column;
+        }
+
+        /*SECTION 4 : SITE FOOTER*/
+        .site-footer {
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!--NAVBAR-->
+    <nav>
+      <div class="left">
+        <a href="/">Ruby B.</a>
+      </div>
+
+      <div class="right">
+        <a href="http://github.com" target="_blank" rel="noopener noreferrer"
+          ><i class="fa-brands fa-github"></i><span>Github</span></a
+        >
+
+        <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer"
+          ><i class="fa-brands fa-linkedin"></i><span>Linkedin</span></a
+        >
+
+        <a
+          href="mailto:ruby.brobey@outlook.com?subject=Work with me"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-solid fa-envelope"></i><span>Email</span></a
+        >
+      </div>
+    </nav>
+
+    <main>
+      <!--SECTION 1: HERO-->
+      <section class="hero-section">
+        <div class="text">
+          <h1>
+            <span>Hi!</span>I'm Ruby Brobey a Front End & HTML Email
+            Developer...
+          </h1>
+          <p>
+            Based in London. I create clean, responsive HTML emails and modern
+            web experiences that work across all devices.
+          </p>
+
+          <div class="links">
+            <a href="#skills">
+              <i class="fa-solid fa-code"></i>
+              <span>Skills</span>
+            </a>
+
+            <a href="#portfolio">
+              <i class="fa-solid fa-file"></i>
+              <span>Portfolio</span>
+            </a>
+
+            <!-- <a href="#contact">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Contact</span>
+            </a> -->
+          </div>
+        </div>
+
+        <div class="headshot">
+          <img
+            src="img/ruby-headshot-transparent.png.webp"
+            alt="ruby"
+            width="350px"
+          />
+        </div>
+      </section>
+
+      <!--SECTION 2: Skills-->
+      <section id="skills" class="skills-section">
+        <h2>Skills</h2>
+        <div class="text">
+          <div class="text">
+            I have experience building responsive websites and HTML emails using
+            modern front-end tools. I focus on clean code, accessible design,
+            and cross-platform compatibility.
+          </div>
+        </div>
+
+        <div class="cells">
+          <div class="cell">
+            <img src="img/html-5.webp" alt="html logo" />
+            <span>HTML</span>
+          </div>
+
+          <div class="cell">
+            <img src="img/css-3.webp" alt="css logo" />
+            <span>CSS</span>
+          </div>
+        </div>
+      </section>
+
+      <!--SECTION 3: PORTFOLIO-->
+      <section id="portfolio" class="portfolio-section">
+        <h2>Portfolio</h2>
+        <p style="text-decoration: underline; color: var(--link-color)">
+          HTML email projects
+        </p>
+
+        <!-- Container for all 3 columns -->
+        <div class="portfolio-grid">
+          <div class="project-item">
+            <img src="/img/me.webp" alt="Project image" />
+            <p>Promotional Email</p>
+            <p>House of Fraser</p>
+          </div>
+
+          <div class="project-item">
+            <img src="/img/me.webp" alt="Project image" />
+            <p>Promotional Email</p>
+            <p>House of Fraser</p>
+          </div>
+
+          <div class="project-item">
+            <img src="/img/me.webp" alt="Project image" />
+            <p>Responsive Promotional Email</p>
+            <p>House of Fraser</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--SECTION 4: FOOTER-->
+    <footer class="site-footer">
+      <p>&copy; 2025 Ruby Brobey</p>
+    </footer>
+  </body>
+</html>
