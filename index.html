@@ -226,7 +226,9 @@
         margin-bottom: 20px;
         width: 100%;
         max-width: 300px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* soft shadow */
+        height: 600px; /* 👈 fixed height */
+        object-fit: cover; /* 👈 makes image fill the box without stretching */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       }
 
       .portfolio-section .project-item img:hover {
@@ -456,11 +458,7 @@
               with the actual Mango brand.
             </p>
             <a href="" target="_blank">View Full Email</a>
-            <a
-              href="https://github.com/rubybrobey/portfolio-website/blob/main/html-emails/promo.html"
-              target="_blank"
-              >View Code</a
-            >
+            <a href="" target="_blank">View Code</a>
           </div>
         </div>
       </section>
