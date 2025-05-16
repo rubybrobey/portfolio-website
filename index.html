@@ -29,17 +29,17 @@
         --background-color: #ffffff;
         --skills-background: #f3f6f9;
       }
-      /*Reset default styling by targeting all elements*/
+
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
       }
-      /*Scroll behaviour from link to link*/
+
       html {
         scroll-behavior: smooth;
       }
-      /*Default font and fall back font*/
+
       body {
         font-family: "Poppins", sans-serif;
         background-color: var(--background-color);
@@ -66,7 +66,7 @@
       nav .left a {
         color: var(--link-color);
         font-size: 22px;
-        font-weight: 600; /*Respective google fonts import 600 or 400*/
+        font-weight: 600;
       }
 
       nav .right a {
@@ -74,7 +74,6 @@
         margin: 0 10px;
       }
 
-      /*Target last link in right div*/
       nav .right a:last-child {
         color: var(--background-color);
         background-color: var(--text-color);
@@ -127,7 +126,7 @@
         font-size: 45px;
 
         font-size: 1.4em;
-        color: var(--link-color); /* or any color you want */
+        color: var(--link-color);
         margin-right: 10px;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
       }
@@ -226,8 +225,7 @@
         margin-bottom: 20px;
         width: 100%;
         max-width: 300px;
-        height: 600px; /* 👈 fixed height */
-        object-fit: cover; /* 👈 makes image fill the box without stretching */
+        height: 600px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
       }
 
