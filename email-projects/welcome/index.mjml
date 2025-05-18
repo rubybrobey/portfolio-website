@@ -1,0 +1,147 @@
+<mjml>
+  <mj-head>
+    <mj-title>Welcome to NatuNest</mj-title>
+    <mj-attributes>
+      <mj-all font-family="sans-serif" />
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#f0fdf4">
+    <!--BORDER-->
+    <mj-section background-color="#2e7d32" padding="6px 0"> </mj-section>
+
+    <!--LOGO SECTION-->
+    <mj-section padding="0" background-color="#ffffff">
+      <mj-column width="300px" padding="8px 0">
+        <mj-image
+          width="250px"
+          src="https://raw.githubusercontent.com/rubybrobey/naturenest-assets/main/logos/logo-transparent@3x.png"
+          alt=""
+        />
+      </mj-column>
+    </mj-section>
+
+    <!--HERO SECTION-->
+    <mj-section padding="0" background-color="#fff">
+      <mj-column>
+        <mj-image
+          padding="0"
+          src="https://raw.githubusercontent.com/rubybrobey/naturenest-assets/refs/heads/main/emails/welcome/hero-welcome-banner.jpg"
+          alt=""
+        />
+      </mj-column>
+    </mj-section>
+
+    <!--HEADING & TEXT -->
+    <mj-section background-color="#ffffff" padding="30px 20px">
+      <mj-column width="100%">
+        <mj-text
+          align="center"
+          font-size="24px"
+          font-weight="bold"
+          color="#2e7d32"
+          padding="0 0 10px 0"
+        >
+          Welcome to NatuNest
+        </mj-text>
+
+        <mj-text
+          align="center"
+          font-size="16px"
+          color="#555555"
+          padding="10px 40px"
+        >
+          NatuNest is your new favorite destination for natural wellness
+          essentials from nourishing teas and ethical vitamins to calming
+          skincare. We're here to support your journey to feeling better
+          naturally.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!--OFFER & BUTTON-->
+    <mj-section padding="20px" background-color="#f0fdf4">
+      <mj-column>
+        <mj-text align="center" color="#81c784" font-weight="bold">
+          As a thank you, enjoy 10% off your first order.
+        </mj-text>
+        <mj-button href="#" background-color="#81c784" color="#ffffff"
+          >Shop Now & Save</mj-button
+        >
+      </mj-column>
+    </mj-section>
+
+    <!--PRODUCT HIGHLIGHT-->
+    <mj-section background-color="#ffffff" padding="30px 20px">
+      <mj-column width="50%" vertical-align="top">
+        <mj-image
+          padding="0"
+          width="300px"
+          src="https://raw.githubusercontent.com/rubybrobey/naturenest-assets/refs/heads/main/emails/welcome/image.jpg"
+          alt=""
+        />
+      </mj-column>
+
+      <mj-column width="50%" vertical-align="top">
+        <mj-text align="left" font-size="14px">
+          Ready to glow naturally?</mj-text
+        >
+        <mj-text align="left" font-size="14px">
+          You deserve skincare that cares back. Our Moisture Boost Sheet Mask is
+          packed with natural hydration — for skin that feels calm, smooth, and
+          healthy.
+        </mj-text>
+        <mj-button href="#" background-color="#81c784" color="#ffffff"
+          >Explore Skincare
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!--SOCIAL LINKS-->
+    <mj-section background-color="#f9f6f0">
+      <mj-column>
+        <mj-social
+          font-size="14px"
+          icon-size="24px"
+          mode="horizontal"
+          align="center"
+        >
+          <mj-social-element name="facebook" href="#" />
+          <mj-social-element name="instagram" href="#" />
+          <mj-social-element name="pinterest" href="#" />
+        </mj-social>
+      </mj-column>
+    </mj-section>
+
+    <!--FOOTER-->
+    <mj-section background-color="#fff" padding="80px 20px">
+      <mj-column width="100%">
+        <mj-text
+          font-size="14px"
+          color="#2e7d32"
+          font-weight="bold"
+          align="center"
+        >
+          NatuNest | Health & Wellness
+        </mj-text>
+
+        <mj-text font-size="13px" color="#555555" align="center">
+          You're receiving this email because you signed up at NatuNest. We
+          respect your privacy. No spam, ever.
+        </mj-text>
+
+        <mj-text font-size="13px" color="#555555" align="center">
+          Need help?
+          <a href="#">support@naturenest.com</a>
+        </mj-text>
+
+        <mj-text font-size="12px" color="#888888" align="center">
+          <a href="#" style="color: #888888">Privacy Policy</a>
+          <a href="#" style="color: #888888">Unsubscribe</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!--BORDER-->
+    <mj-section background-color="#2e7d32" padding="6px 0"> </mj-section>
+  </mj-body>
+</mjml>
